@@ -40,11 +40,11 @@ In the previous guide, you added products to the Chec Dashboard and listed them 
 
 ### STEP 1. Adding Variants:
 
-This step is important when having products with some sort of variance. If you have a product without variances, you can proceed to Step 2. — otherwise you will need to add product variances in your Chec Dashboard. In our example store selling t-shirts, most likely you'll have different sizes and colors. To keep it simple we will be providing one variant and three options of **Small, Medium, Large**. Once you click on a product, select the options tab ...   
+This step is important when having products with some sort of variance. If you have a product without variances, you can proceed to Step 2. — otherwise you will need to add product variances in your Chec Dashboard. In this example store selling t-shirts, most likely you'll have different sizes and colors. To keep it simple let's provide one variant and three options of **Small, Medium, Large**. Once you click on a product, select the options tab ...   
 
 ![](src/img/add-variant.JPG)
 
-It's important to note that you shouldn't add a price in this section unless a particular variant yields an increase in price. So in our case no matter which size you select, the price remains $25. Save those changes and let's see how we can handle this in your code! 
+It's important to note that you shouldn't add a price in this section unless a particular variant yields an increase in price. So in this case no matter which size you select, the price remains $25. Save those changes and let's see how to handle this in your code! 
 
 #### Handling Variants in the code
 
@@ -52,7 +52,7 @@ The Product object has a property *`variants`* which is an array with each produ
 
 ![](src/img/variant-property.JPG)
 
-You can handle this data in your `<ProuductCard />` component where you are currently displaying product info. You can display the options how you like, but for this example, we will use a drop-down. Because of how drop-downs are configured with Semantic UI - we have to provide an options array of objects with a certain format. 
+You can handle this data in your `<ProuductCard />` component where you are currently displaying product info. You can display the options how you like, but for this example, use a drop-down. Because of how drop-downs are configured with Semantic UI - you will have to provide an options array of objects with a certain format. 
 
 ```javascript
 // *** ProductCard.js ***
@@ -73,7 +73,7 @@ You can handle this data in your `<ProuductCard />` component where you are curr
     }, [])
 ```
 
-The purpose of the `useEffect()` here is that the `<Dropdown />` Semantic UI component needs options to select.  The `useEffect()` allows you to map through the variant options and create your options array before the render.  It's important to note that here, we have set the value to the option.id because that is data needed to add a product (and it's variant) to the cart.  Once complete, add that value to state so our `<Dropdown />`  component can access it.  
+The purpose of the `useEffect()` here is that the `<Dropdown />` Semantic UI component needs options to select.  The `useEffect()` allows you to map through the variant options and create your options array before the render.  It's important to note that here, the value to the option.id has been set because that is data needed to add a product (and it's variant) to the cart.  Once complete, add that value to state so our `<Dropdown />`  component can access it.  
 
 ```
 const [sizes, setSizes] = useState([])
@@ -125,7 +125,7 @@ This function creates an object that matches the proper format for sending varia
 
 ### STEP 2. Addding Product to Cart:
 
-This is where the fun begins! Just a point of note, you're going to see a pattern emerge where we add an action button - write a function to handle said action, then pass that function to the component that needs it.  But before you do any of that, you first need to setup the state that will be holding your cart object for the entire app.  
+This is where the fun begins! Just a point of note, you're going to see a pattern emerge where you add an action button - write a function to handle said action, then pass that function to the component that needs it.  But before you do any of that, you first need to setup the state that will be holding your cart object for the entire app.  
 
 ```
 // *** App.js ***
@@ -260,13 +260,13 @@ This is accomplished by sending your cart object from state to your `<Nav />` co
 <Nav cart={cart} emptyCart={emptyCart}/>
 ```
 
-The cart object has all the necessary data required to display what's needed to the customer.  And, if you recall because we're updating the cart object in state whenever there are changes, you can attach key data to the cart object and ensure that the cart information is correct.
+The cart object has all the necessary data required to display what's needed to the customer.  And, if you recall because you are updating the cart object in state whenever there are changes, you can attach key data to the cart object and ensure that the cart information is correct.
 
 Here's a look at the cart object with key data points underlined ... 
 
 ![](src/img/cart-object.JPG)
 
-One of the best benefits of the Commerce.js SDK is that we can tie the `total_unique_items` property to the cart icon to either show a number or the plain black cart.  
+One of the best benefits of the Commerce.js SDK is that you can tie the `total_unique_items` property to the cart icon to either show a number or the plain black cart.  
 
 ```javascript
 // *** Nav.js ***
@@ -518,7 +518,7 @@ return (
 );
 ```
 
-You can see we have hardcoded the initial quanity, bringing that value from props and set it as an input value. 
+Hardcoding the initial quanity, brings that value from props and sets it as an input value. 
 
 ``` javascript
 // *** CartItems.js ***
@@ -586,7 +586,7 @@ You also have some extra logic in your `subtractQuanity()` function that checks 
 
 Because the `<CartItems />` component is deeply nested, use a particular hook to help prevent massive prop drilling - `useContext()`.  
 
-*Again, this is preference and NOT a guide on react hooks or prop drilling...*  
+*Again, this is preference and NOT a guide on React hooks or prop drilling...*  
 
 Moving forward, in order to use [Context API](https://reactjs.org/docs/hooks-reference.html#usecontext) - you'll need to setup your context and export it using `createContext()`: 
 
