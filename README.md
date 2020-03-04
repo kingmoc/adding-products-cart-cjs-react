@@ -1,4 +1,4 @@
-# Adding products to your Cart using Commerce.js (SDK) and React.js
+# Adding products to a Cart with React.js and Commerce.js SDK
 
 This guide illustrates how to create and add products to your cart using React.js & Commerce.js (SDK)
 
