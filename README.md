@@ -52,7 +52,7 @@ The Product object has a property *`variants`* which is an array with each produ
 
 ![](src/img/variant-property.JPG)
 
-You can handle this data in your `<ProuductCard />` component where you are currently displaying product info. You can display the options how you like, but for this example, use a drop-down. Because of how drop-downs are configured with Semantic UI - you will have to provide an options array of objects with a certain format. 
+You can handle this data in your `<ProductCard />` component where you are currently displaying product info. You can display the options how you like, but for this example, use a drop-down. Because of how drop-downs are configured with Semantic UI - you will have to provide an options array of objects with a certain format. 
 
 ```javascript
 // *** ProductCard.js ***
@@ -657,7 +657,7 @@ You can calcuate the `newQaunity` and pass that data along with the `item.id`.  
 
 #### Conclusion 
 
-Wheew! Let's take a step back and quickly summarize what you acommplished in this guide.  
+Wheew! Let's take a step back and quickly summarize what you accomplished in this guide.  
 - used the Chec Dashboard to add variants to products
 - setup global cart object and wrote function to add product to cart
 - made sure visually the customer can be assured an item was added to the cart
@@ -665,7 +665,7 @@ Wheew! Let's take a step back and quickly summarize what you acommplished in thi
 - wrote function to empty cart and added button
 - wrote functions to increase/decrease quanity and added buttons 
 
-Thanks to the Commerce.js SDK and all the usefull methods/functions that come with the commerce object - **updating/refreshing/adding** to your cart becomes straighforward and easy to manage.  You setup your global state for the cart and pass that data throughout your app.  
+Thanks to the Commerce.js SDK and all the useful methods/functions that come with the commerce object - **updating/refreshing/adding** to your cart becomes straightforward and easy to manage.  You setup your global state for the cart and pass that data throughout your app.  
 
 If you happen to be advanced in React you can implement Redux for state managment and initialize your store with the cart object. There are many ways to design and layout your eCommerce app - but the most important factor is getting the neccessary data in order to provide a smooth user experience when selecting a product and adding it to the cart.  
 
