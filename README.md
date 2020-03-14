@@ -672,6 +672,10 @@ If you happen to be advanced in React you can implement Redux for state managmen
 This guide is a continuation of a previous guide:
  - [Listing Products in Catalog](https://github.com/kingmoc/product-list-cjs-react) - check that out if you're just starting out and need help with getting your products listed on the page.  
 
+ If you're ready for the next step - check out the next guide: 
+
+-> [Creating a Single Page Checkout](https://github.com/kingmoc/single-page-checkout-cjs-react)
+
 [LIVE DEMO](https://seities-store-cjs-react-guide.netlify.com/)
 
 ## Built With
