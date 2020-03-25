@@ -2,13 +2,14 @@
 
 This guide illustrates how to create and add products to your cart using React.js & Commerce.js (SDK)
 
-[See live demo here.](https://seities-store-cjs-react-guide.netlify.com/)
+* [Live demo for this Guide: "***Adding products to Cart***"](https://adding-products-to-cart-commercejs.netlify.com/)
+* [Live demo for entire integration (storefront > cart > checkout)](https://seities-store-cjs-react-guide.netlify.com/)
 
 ****** *Note* ******
 
-* *This guide is using v2 of the SDK*
-* *The Live Demo is best viewed on Desktop (**responsiveness limited**)*
-* *This is a continuation of a previous guide - [Listing Products in Catalog](https://github.com/kingmoc/product-list-cjs-react)*
+1. *This guide is using v2 of the SDK*
+2. *The Live Demo is best viewed on Desktop (**responsiveness limited**)*
+3. *This is a continuation of a previous guide - [Listing Products in Catalog](https://github.com/kingmoc/product-list-cjs-react)*
 
 **********
 
