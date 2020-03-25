@@ -677,7 +677,11 @@ This guide is a continuation of a previous guide:
 
 -> [Creating a Single Page Checkout](https://github.com/kingmoc/single-page-checkout-cjs-react)
 
-[LIVE DEMO](https://seities-store-cjs-react-guide.netlify.com/)
+___
+
+[Live demo for this Guide: "***Adding products to Cart***"](https://adding-products-to-cart-commercejs.netlify.com/)
+
+[Live demo for entire integration (storefront > cart > checkout)](https://seities-store-cjs-react-guide.netlify.com/)
 
 ## Built With
 
